@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: #dad6ff;
+  font-family: "Poppins", sans-serif;
+}
+table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  width: 600px;
+  height: 200px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  font-size: 12px;
+}
+.list-table {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.list-table th,
+.list-table td {
+  border-bottom: 1px solid #f0eeff;
+  border-left: 1px solid #f0eeff;
+  padding: 7px 17px;
+}
+.list-table thead th {
+  background-color: #231996;
+  color: #fff;
+  border-color: #4238ac !important;
+  text-transform: uppercase;
+}
+
+.list-table tbody tr:hover th,
+.list-table tbody tr:hover td {
+  background-color: #c1e797;
+  border-color: #9ae748;
+  transition: all 0.2s;
+}
+caption {
+  font-size: 40px;
+  caption-side: top;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  tabile.responsive {
+    width: 100%;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    display: block;
+    text-align: left;
+    border-right: 1px solid #e1edff;
+  }
+  td::before {
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    content: attr(data-header);
+  }
+  table {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 360px;
+    height: 200px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    font-size: 12px;
+  }
+}
